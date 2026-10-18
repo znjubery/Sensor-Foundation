@@ -1,0 +1,41 @@
+site_name: Sensor Foundations Notebook
+site_description: "MEMS, microfluidics & electronic sensors: 19 connected, interactive notes"
+repo_url: https://github.com/znjubery/Sensor-Foundation
+theme:
+  name: material
+  features: [navigation.sections, navigation.footer, content.code.copy]
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - Start here: index.md
+  - Notation: notation.md
+  - 'Part A · Electronic sensors & signals':
+      - 'A1. What a sensor is': A1-what-a-sensor-is-transduction-and-the-measurement-chain.md
+      - 'A2. Resistive sensors & the Wheatstone bridge': A2-resistive-sensors-and-the-wheatstone-bridge.md
+      - 'A3. Capacitive sensors': A3-capacitive-sensors.md
+      - 'A4. Piezoelectric, piezoresistive & magnetic sensors': A4-piezoelectric-piezoresistive-and-magnetic-sensors.md
+      - 'A5. Optical sensors: photodiodes, image sensors, LiDAR': A5-optical-sensors-photodiodes-image-sensors-and-lidar.md
+      - 'A6. Electrochemical sensors & biosensors': A6-electrochemical-sensors-and-biosensors.md
+      - 'A7. Signal conditioning: amplifiers, filters, ADCs': A7-signal-conditioning-amplifiers-filters-and-adcs.md
+      - 'A8. Noise, resolution, calibration & drift': A8-noise-resolution-calibration-and-drift.md
+      - 'A9. Sensor fusion & the Kalman filter': A9-sensor-fusion-and-the-kalman-filter.md
+  - 'Part B · MEMS':
+      - 'B1. Scaling laws: why small is different': B1-scaling-laws-why-small-is-different.md
+      - 'B2. Microfabrication': B2-microfabrication-lithography-etching-deposition.md
+      - 'B3. Beams, springs & resonators': B3-micromechanics-beams-springs-and-resonators.md
+      - 'B4. Accelerometers & gyroscopes': B4-mems-inertial-sensors-accelerometers-and-gyroscopes.md
+      - 'B5. Microphones, pressure sensors & actuators': B5-mems-microphones-pressure-sensors-and-actuators.md
+  - 'Part C · Microfluidics & lab-on-a-chip':
+      - 'C1. Reynolds number & laminar flow': C1-fluids-at-the-microscale-reynolds-number-and-laminar-flow.md
+      - 'C2. Pressure-driven flow & hydraulic circuits': C2-pressure-driven-flow-and-hydraulic-circuits.md
+      - 'C3. Diffusion, mixing & the Péclet number': C3-diffusion-mixing-and-the-peclet-number.md
+      - 'C4. Surface tension, droplets & electrokinetics': C4-surface-tension-capillarity-droplets-and-electrokinetics.md
+      - 'C5. Lab-on-a-chip & integrated systems': C5-lab-on-a-chip-organ-on-chip-and-integrated-sensing-systems.md
